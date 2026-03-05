@@ -24,6 +24,8 @@
             gh # GitHub CLI
             go # Go toolchain (for testing gopls)
             gopls # Go language server
+            rustup # Rust toolchain (for testing rust-analyzer)
+            rust-analyzer # Rust language server
           ];
         };
       }
