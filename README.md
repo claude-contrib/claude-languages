@@ -1,34 +1,70 @@
 # claude-languages
 
-A curated collection of LSP (Language Server Protocol) servers for Claude Code — providing code completion, diagnostics, hover info, and other language intelligence features.
+> LSP language servers for [Claude Code](https://claude.ai/code) — code completion, diagnostics, hover, and go-to-definition for every language you work in.
+
+[![Validate](https://github.com/claude-contrib/claude-languages/actions/workflows/validate.yml/badge.svg)](https://github.com/claude-contrib/claude-languages/actions/workflows/validate.yml)
+[![Release](https://img.shields.io/github/v/release/claude-contrib/claude-languages)](https://github.com/claude-contrib/claude-languages/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+Language servers extend what Claude *understands* — not just what it can do. Install a language plugin and Claude gains deep code intelligence: real-time errors, symbol navigation, and context-aware completions, powered by the same LSP servers your editor uses.
 
 ## Quickstart
 
-Register this marketplace in Claude Code:
+**1. Register the marketplace** in `~/.claude/settings.json`:
 
-```bash
-claude
-/plugin marketplace add https://github.com/claude-contrib/claude-languages
+```json
+{
+  "extraKnownMarketplaces": {
+    "claude-languages": {
+      "source": {
+        "source": "github",
+        "repo": "claude-contrib/claude-languages"
+      }
+    }
+  }
+}
 ```
 
-Then install a language server plugin:
+**2. Install a language server** inside Claude Code:
 
-```bash
-/plugin install gopls@claude-languages
+```
+/plugin install golang@claude-languages
 ```
 
-Open a `.go` file and gopls language features (completions, diagnostics, hover) will be available.
+Claude now has Go language intelligence available in every session.
 
 ## Available Language Servers
 
-| Plugin | Language | Description |
-|--------|----------|-------------|
-| [gopls](./plugins/gopls) | Go | Official Go language server by the Go team |
+| Plugin | Language | Powered by | Description |
+|--------|----------|------------|-------------|
+| [`golang`](plugins/golang/README.md) | Go | [gopls](https://github.com/golang/tools/tree/master/gopls) | Official Go language server by the Go team |
+| [`rust`](plugins/rust/README.md) | Rust | [rust-analyzer](https://github.com/rust-lang/rust-analyzer) | Official Rust language server |
 
-## How to Add Your Own Language Server
+## Publish Your Own Language Server
 
-See the [contributor guide](./docs/README.md) for step-by-step instructions on packaging and submitting an LSP plugin.
+Have an LSP server your team relies on? Package it for one-command install:
+
+```
+plugins/your-language/
+├── .claude-plugin/plugin.json   # name, version, description
+├── .lsp.json                    # server command + args + file extension mapping
+└── README.md                   # what it unlocks + install instructions
+```
+
+1. **Fork** this repo and drop your plugin under `plugins/`
+2. **Register** it in `.claude-plugin/marketplace.json`
+3. **Open a PR** — CI validates structure automatically
+
+→ [Read the full authoring guide](docs/README.md)
+
+## The claude-contrib Ecosystem
+
+| Marketplace | Install key | What it provides |
+|-------------|------------|-----------------|
+| [claude-extensions](https://github.com/claude-contrib/claude-extensions) | `@claude-extensions` | Hooks, context rules, session automation |
+| [claude-services](https://github.com/claude-contrib/claude-services) | `@claude-services` | MCP servers — browser, filesystem, sequential thinking |
+| **claude-languages** ← you are here | `@claude-languages` | LSP language servers — completions, diagnostics, hover |
 
 ## License
 
-MIT
+MIT — use it, fork it, extend it.
