@@ -45,6 +45,23 @@
           "jsonpath": "$.plugins[?(@.name=='rust')].version"
         }
       ]
+    },
+    "plugins/terraform": {
+      "release-type": "simple",
+      "component": "terraform",
+      "skip-github-release": true,
+      "extra-files": [
+        {
+          "type": "json",
+          "path": "plugins/terraform/.claude-plugin/plugin.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": ".claude-plugin/marketplace.json",
+          "jsonpath": "$.plugins[?(@.name=='terraform')].version"
+        }
+      ]
     }
   }
 }

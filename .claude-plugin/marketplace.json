@@ -50,6 +50,30 @@
         "language-server",
         "rust-analyzer"
       ]
+    },
+    {
+      "name": "terraform",
+      "description": "Official Terraform language server",
+      "version": "1.0.0",
+      "author": {
+        "name": "claude-contrib"
+      },
+      "source": "./plugins/terraform",
+      "category": "language-servers",
+      "tags": [
+        "lsp",
+        "terraform",
+        "hcl",
+        "hashicorp"
+      ],
+      "keywords": [
+        "lsp",
+        "terraform",
+        "hcl",
+        "language-server",
+        "terraform-ls",
+        "hashicorp"
+      ]
     }
   ]
 }
