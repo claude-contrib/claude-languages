@@ -1,0 +1,39 @@
+# Claude Code
+.claude/cache/
+.claude/logs/
+.claude/temp/
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Environment
+.env
+.env.local
+.env.*.local
+secrets.json
+credentials.json
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Nix
+.direnv/
+result
+result-*

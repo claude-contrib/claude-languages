@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lsp.schema.json",
+  "title": "Claude Languages LSP Configuration",
+  "type": "object",
+  "minProperties": 1,
+  "additionalProperties": {
+    "type": "object",
+    "required": ["command", "args", "extensionToLanguage"],
+    "additionalProperties": false,
+    "properties": {
+      "command": {
+        "type": "string",
+        "description": "The executable to launch the language server"
+      },
+      "args": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Arguments to pass to the language server executable"
+      },
+      "extensionToLanguage": {
+        "type": "object",
+        "additionalProperties": { "type": "string" },
+        "description": "Mapping from file extension (e.g. '.go') to language identifier"
+      },
+      "transport": {
+        "type": "string",
+        "enum": ["stdio"],
+        "description": "Communication transport between Claude Code and the LSP server"
+      },
+      "initializationOptions": {
+        "type": "object",
+        "description": "Options passed to the LSP server during initialization"
+      },
+      "settings": {
+        "type": "object",
+        "description": "LSP workspace/user settings sent after initialization"
+      },
+      "maxRestarts": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "Maximum number of times to restart the server on failure"
+      }
+    }
+  }
+}

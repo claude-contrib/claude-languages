@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "release-type": "simple",
+  "packages": {
+    ".": {
+      "release-type": "simple",
+      "extra-files": [
+        {
+          "type": "json",
+          "path": ".claude-plugin/marketplace.json",
+          "jsonpath": "$.metadata.version"
+        }
+      ]
+    },
+    "plugins/golang": {
+      "release-type": "simple",
+      "component": "golang",
+      "skip-github-release": true,
+      "extra-files": [
+        {
+          "type": "json",
+          "path": "plugins/golang/.claude-plugin/plugin.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": ".claude-plugin/marketplace.json",
+          "jsonpath": "$.plugins[?(@.name=='golang')].version"
+        }
+      ]
+    },
+    "plugins/rust": {
+      "release-type": "simple",
+      "component": "rust",
+      "skip-github-release": true,
+      "extra-files": [
+        {
+          "type": "json",
+          "path": "plugins/rust/.claude-plugin/plugin.json",
+          "jsonpath": "$.version"
+        },
+        {
+          "type": "json",
+          "path": ".claude-plugin/marketplace.json",
+          "jsonpath": "$.plugins[?(@.name=='rust')].version"
+        }
+      ]
+    }
+  }
+}

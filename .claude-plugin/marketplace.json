@@ -1,0 +1,55 @@
+{
+  "name": "claude-languages",
+  "owner": {
+    "name": "claude-contrib",
+    "email": "claude-contrib@github.com"
+  },
+  "metadata": {
+    "description": "A curated collection of LSP servers for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "golang",
+      "description": "Official Go language server",
+      "version": "1.0.0",
+      "author": {
+        "name": "claude-contrib"
+      },
+      "source": "./plugins/golang",
+      "category": "language-servers",
+      "tags": [
+        "lsp",
+        "go",
+        "golang"
+      ],
+      "keywords": [
+        "lsp",
+        "go",
+        "golang",
+        "language-server",
+        "gopls"
+      ]
+    },
+    {
+      "name": "rust",
+      "description": "Rust language server",
+      "version": "1.0.0",
+      "author": {
+        "name": "claude-contrib"
+      },
+      "source": "./plugins/rust",
+      "category": "language-servers",
+      "tags": [
+        "lsp",
+        "rust"
+      ],
+      "keywords": [
+        "rust",
+        "lsp",
+        "language-server",
+        "rust-analyzer"
+      ]
+    }
+  ]
+}

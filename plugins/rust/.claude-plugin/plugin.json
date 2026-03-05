@@ -1,0 +1,19 @@
+{
+  "name": "rust",
+  "version": "1.0.0",
+  "description": "Rust language server",
+  "author": {
+    "name": "claude-contrib",
+    "email": "claude-contrib@github.com",
+    "url": "https://github.com/claude-contrib"
+  },
+  "homepage": "https://github.com/claude-contrib/claude-languages",
+  "repository": "https://github.com/rust-lang/rust-analyzer",
+  "license": "Apache-2.0 OR MIT",
+  "keywords": [
+    "rust",
+    "lsp",
+    "language-server",
+    "rust-analyzer"
+  ]
+}
