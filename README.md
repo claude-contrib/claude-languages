@@ -39,6 +39,7 @@ Claude now has Go language intelligence available in every session.
 |--------|----------|------------|-------------|
 | [`golang`](plugins/golang/README.md) | Go | [gopls](https://github.com/golang/tools/tree/master/gopls) | Official Go language server by the Go team |
 | [`rust`](plugins/rust/README.md) | Rust | [rust-analyzer](https://github.com/rust-lang/rust-analyzer) | Official Rust language server |
+| [`terraform`](plugins/terraform/README.md) | Terraform / HCL | [terraform-ls](https://github.com/hashicorp/terraform-ls) | Official Terraform language server by HashiCorp |
 
 ## Publish Your Own Language Server
 
