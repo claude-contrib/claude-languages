@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/claude-contrib/claude-languages/compare/v1.2.1...v1.2.2) (2026-03-06)
+
+
+### Bug Fixes
+
+* **release:** sync manifest versions to actual state ([a0021b3](https://github.com/claude-contrib/claude-languages/commit/a0021b30ebc804c61c4d5a262bc0d4783da19407))
+
 ## [1.2.1](https://github.com/claude-contrib/claude-languages/compare/v1.2.0...v1.2.1) (2026-03-06)
 
 
