@@ -6,13 +6,13 @@
   },
   "metadata": {
     "description": "A curated collection of LSP servers for Claude Code",
-    "version": "1.2.1"
+    "version": "1.2.2"
   },
   "plugins": [
     {
       "name": "golang",
       "description": "Official Go language server",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "claude-contrib"
       },
@@ -34,7 +34,7 @@
     {
       "name": "rust",
       "description": "Rust language server",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "claude-contrib"
       },
