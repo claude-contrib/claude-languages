@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/claude-contrib/claude-languages/compare/v1.2.0...v1.2.1) (2026-03-06)
+
+
+### Bug Fixes
+
+* **release:** add checkout step, fix extra-files paths, remove skip-github-release ([eef1278](https://github.com/claude-contrib/claude-languages/commit/eef1278ab3e24c52d9f782ebbc6f6c0ecc9a006a))
+
 ## [1.2.0](https://github.com/claude-contrib/claude-languages/compare/v1.1.0...v1.2.0) (2026-03-05)
 
 

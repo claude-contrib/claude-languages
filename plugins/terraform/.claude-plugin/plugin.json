@@ -1,6 +1,6 @@
 {
   "name": "terraform",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Official Terraform language server",
   "author": {
     "name": "claude-contrib",
@@ -10,5 +10,12 @@
   "homepage": "https://github.com/claude-contrib/claude-languages",
   "repository": "https://github.com/hashicorp/terraform-ls",
   "license": "MPL-2.0",
-  "keywords": ["terraform", "hcl", "lsp", "language-server", "terraform-ls", "hashicorp"]
+  "keywords": [
+    "terraform",
+    "hcl",
+    "lsp",
+    "language-server",
+    "terraform-ls",
+    "hashicorp"
+  ]
 }
