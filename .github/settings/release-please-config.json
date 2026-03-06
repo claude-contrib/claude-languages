@@ -15,6 +15,7 @@
     "plugins/golang": {
       "release-type": "simple",
       "component": "golang",
+      "skip-github-release": true,
       "extra-files": [
         {
           "type": "json",
@@ -31,6 +32,7 @@
     "plugins/rust": {
       "release-type": "simple",
       "component": "rust",
+      "skip-github-release": true,
       "extra-files": [
         {
           "type": "json",
@@ -47,6 +49,7 @@
     "plugins/terraform": {
       "release-type": "simple",
       "component": "terraform",
+      "skip-github-release": true,
       "extra-files": [
         {
           "type": "json",
