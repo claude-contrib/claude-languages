@@ -60,11 +60,14 @@ plugins/your-language/
 
 ## The claude-contrib Ecosystem
 
-| Marketplace | Install key | What it provides |
-|-------------|------------|-----------------|
-| [claude-extensions](https://github.com/claude-contrib/claude-extensions) | `@claude-extensions` | Hooks, context rules, session automation |
-| [claude-services](https://github.com/claude-contrib/claude-services) | `@claude-services` | MCP servers — browser, filesystem, sequential thinking |
-| **claude-languages** ← you are here | `@claude-languages` | LSP language servers — completions, diagnostics, hover |
+| Repo | What it provides |
+|------|-----------------|
+| [claude-extensions](https://github.com/claude-contrib/claude-extensions) | Hooks, context rules, session automation |
+| [claude-features](https://github.com/claude-contrib/claude-features) | Devcontainer features for Claude Code and Anthropic tools |
+| **claude-languages** ← you are here | LSP language servers — completions, diagnostics, hover |
+| [claude-sandbox](https://github.com/claude-contrib/claude-sandbox) | Sandboxed Docker environment for Claude Code |
+| [claude-services](https://github.com/claude-contrib/claude-services) | MCP servers — browser, filesystem, sequential thinking |
+| [claude-status](https://github.com/claude-contrib/claude-status) | Live status line — context, cost, model, branch, worktree |
 
 ## License
 
