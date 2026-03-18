@@ -8,6 +8,14 @@
 
 Language servers extend what Claude *understands* — not just what it can do. Install a language plugin and Claude gains deep code intelligence: real-time errors, symbol navigation, and context-aware completions, powered by the same LSP servers your editor uses.
 
+## Requirements
+
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code/setup) (`claude`)
+
+The individual language servers (`gopls`, `rust-analyzer`, `terraform-ls`) are downloaded and installed automatically by the plugin — no manual setup required.
+
+Install `claude` separately: [Claude Code installation guide](https://docs.anthropic.com/en/docs/claude-code/setup)
+
 ## Quickstart
 
 **1. Register the marketplace** in `~/.claude/settings.json`:
