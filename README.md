@@ -8,6 +8,17 @@
 
 Language servers extend what Claude *understands* — not just what it can do. Install a language plugin and Claude gains deep code intelligence: real-time errors, symbol navigation, and context-aware completions, powered by the same LSP servers your editor uses.
 
+## How Language Servers Work
+
+Each plugin bundles an [LSP (Language Server Protocol)](https://microsoft.github.io/language-server-protocol/) server that Claude Code connects to as an external process. Once installed, Claude gains deep code intelligence for that language — the same completions, diagnostics, and navigation your editor uses.
+
+| Capability | What it gives Claude |
+|------------|---------------------|
+| **Completions** | Context-aware symbol and method suggestions |
+| **Diagnostics** | Real-time type errors, lint warnings, undefined references |
+| **Hover** | Type signatures and documentation on demand |
+| **Go-to-definition** | Navigate to declarations across the codebase |
+
 ## Requirements
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code/setup) (`claude`)
@@ -75,6 +86,7 @@ plugins/your-language/
 | **claude-languages** ← you are here | LSP language servers — completions, diagnostics, hover |
 | [claude-sandbox](https://github.com/claude-contrib/claude-sandbox) | Sandboxed Docker environment for Claude Code |
 | [claude-services](https://github.com/claude-contrib/claude-services) | MCP servers — browser, filesystem, sequential thinking |
+| [claude-skills](https://github.com/claude-contrib/claude-skills) | Slash commands for Claude Code |
 | [claude-status](https://github.com/claude-contrib/claude-status) | Live status line — context, cost, model, branch, worktree |
 
 ## License
