@@ -1,4 +1,4 @@
-# claude-languages
+# Claude Languages
 
 > LSP language servers for [Claude Code](https://claude.ai/code) — code completion, diagnostics, hover, and go-to-definition for every language you work in.
 
