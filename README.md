@@ -2,6 +2,7 @@
 
 > LSP language servers for [Claude Code](https://claude.ai/code) — code completion, diagnostics, hover, and go-to-definition for every language you work in.
 
+[![Claude](https://img.shields.io/badge/Claude-AI-black?logo=anthropic)](https://claude.ai)
 [![Validate](https://github.com/claude-contrib/claude-languages/actions/workflows/validate.yml/badge.svg)](https://github.com/claude-contrib/claude-languages/actions/workflows/validate.yml)
 [![Release](https://img.shields.io/github/v/release/claude-contrib/claude-languages)](https://github.com/claude-contrib/claude-languages/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
