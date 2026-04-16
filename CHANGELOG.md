@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/claude-contrib/claude-languages/compare/v1.2.2...v1.2.3) (2026-04-16)
+
+
+### Bug Fixes
+
+* add postCreateCommand to restore nix volume permissions ([b032277](https://github.com/claude-contrib/claude-languages/commit/b03227755ac70efeccb3f7b852e9e051df95043f))
+
 ## [1.2.2](https://github.com/claude-contrib/claude-languages/compare/v1.2.1...v1.2.2) (2026-03-06)
 
 
