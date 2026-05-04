@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.4](https://github.com/claude-contrib/claude-languages/compare/v1.2.3...v1.2.4) (2026-05-04)
+
+
+### Bug Fixes
+
+* **github:** correct action versions in update.yml ([6a9169c](https://github.com/claude-contrib/claude-languages/commit/6a9169cfb89380a21e5c85b575d023700900a6b5))
+
 ## [1.2.3](https://github.com/claude-contrib/claude-languages/compare/v1.2.2...v1.2.3) (2026-04-16)
 
 
