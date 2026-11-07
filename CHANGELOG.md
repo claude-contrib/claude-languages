@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.5](https://github.com/claude-contrib/claude-languages/compare/v1.2.4...v1.2.5) (2026-11-07)
+
+
+### Bug Fixes
+
+* **ci:** merge with the App token so main gets its CI run ([#44](https://github.com/claude-contrib/claude-languages/issues/44)) ([5fc4342](https://github.com/claude-contrib/claude-languages/commit/5fc434234ea27eec633596540b84fcab3b92883b))
+
 ## [1.2.4](https://github.com/claude-contrib/claude-languages/compare/v1.2.3...v1.2.4) (2026-05-04)
 
 
